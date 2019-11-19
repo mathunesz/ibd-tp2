@@ -10,7 +10,7 @@
     <title>IBD TP2</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstra‌​p.min.css" rel="stylesheet" />
+    <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
     <link href="css/business-frontpage.css" rel="stylesheet" />
@@ -256,8 +256,8 @@
     <!-- /.container -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap‌​.min.js"></script>
+    <script src="bootstrap/jquery/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         $('#myList a').on('click', function (e) {
             e.preventDefault()
