@@ -44,7 +44,7 @@
                         Professora: Mirella Moura Moro
                     </p>
                     <p class="lead mb-5 text-dark-50">
-                        Alunos: Fernanda Rocha (2018123154), Matheus Ibrahim (2018123123)
+                        Alunos: Fernanda Rocha (2018046920), Matheus Ibrahim (201846912)
                         e Matheus Lima (2017023153)
                     </p>
                 </div>
@@ -89,7 +89,7 @@
                 <p class="mb-4">
                     Abaixo, fica explícito o diagrama ER específico que foi utilizado neste projeto:
                 </p>
-                <div class="text-center"><img src="./assets/er.png" class="img-fluid"></div>
+                <div class="text-center"><img src="./assets/modelorelacional.png" class="img-fluid"></div>
             </div>
         </div>
 
