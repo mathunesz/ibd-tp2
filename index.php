@@ -89,7 +89,7 @@
                 <p class="mb-4">
                     Abaixo, fica explícito o diagrama ER específico que foi utilizado neste projeto:
                 </p>
-                <div class="text-center"><img src="./assets/modelorelacional.png" class="img-fluid"></div>
+                <div class="text-center"><img src="./assets/relacional-imdb.png" class="img-fluid"></div>
             </div>
         </div>
 
