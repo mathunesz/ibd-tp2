@@ -185,21 +185,21 @@
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-12" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 11</h5>
-                                        <small> x s </small>
+                                        <small> 150 s </small>
                                     </div>
-                                    <p class="mb-1">Relação entre quantidade de filmes produzidos de cada gênero ao longo do tempo e suas avaliações.</p>
+                                    <p class="mb-1">Combinações de gêneros com maior média de temporadas por série e a avaliação média dessas combinações.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-13" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 12</h5>
-                                        <small> x s </small>
+                                        <small> 1153 s </small>
                                     </div>
                                     <p class="mb-1">Relação entre idade das equipes e nota dos filmes.</p>
                                 </a>
 				<a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-13" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 13</h5>
-                                        <small> x s </small>
+                                        <small> 112 s </small>
                                     </div>
                                     <p class="mb-1">Relação entre quantidade de filmes produzidos que possui o gênero ação ao longo do tempo e suas avaliações</p>
                                 </a>
