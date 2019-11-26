@@ -309,9 +309,17 @@
                         <div class="row">
                         <div class="col-md-6">
                             <canvas id="graph-1" width="400" height="200"></canvas>
+				<p>
+                    			Pode se observar que, no geral, filmes com menor número de votos (em azul) possuem menores avaliaçes, e que
+					filmes com mais votos (em vermelho) possuem avaliaçes mais altas. Entretanto, o número de votos não é determinante,
+					pois temos um filme na linha azul com uma avaliação de 8.8.
+               			</p>
                         </div>
                         <div class="col-md-6">
                             <canvas id="graph-4" width="400" height="200"></canvas>
+				<p>
+                    			Pode se observar que temos um número muito menor de atrizes mais velhas atuando em títulos.
+               			</p>
                         </div>
                         </div>
                     </div>
@@ -322,8 +330,9 @@
                 <div class="col-md-12 mb-5">
                     <h2>Referências</h2>
                     <hr />
-                    <p>[1] ASIDJIASJDOIAJSDOIAJSDOIJASDIA </p>
-                    <P>[2] odajsidjasoidjaoisdjaoijsdoiajdoiajd </P>
+                    <p>[1] Banco de Dados IMDb - <a href="https://datasets.imdbws.com/" target="_blank"></p>
+                    <p>[2] Especificações das Tabelas Originais <a href="https://www.imdb.com/interfaces/" target="_blank"></p>
+		    <p>[3] API IMDb SQLite <a href="https://pypi.org/project/imdb-sqlite/" target="_blank"></p>
                 </div>
             </div>
 
