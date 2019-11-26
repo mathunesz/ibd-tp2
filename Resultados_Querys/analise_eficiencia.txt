@@ -20,7 +20,7 @@ V2: SELECT primary_title, rating FROM titles NATURAL JOIN ratings WHERE rating I
 Quais pessoas fizeram mais de 100 títulos como elas mesmas e ainda estão vivas
 V1: SQL: SELECT name, born, count(name) FROM people NATURAL JOIN crew WHERE category='self' and born <> 'NaN' and died IS NULL GROUP BY name HAVING count(name) > 100 ORDER BY name
 	3min 3s
-V2: SELECT name, born, count(name) FROM people WHERE name IN (SELECT name FROM people NATURAL JOIN crew WHERE category='self') AND born <> 'NaN' and died IS NULL GROUP BY name HAVING count(name) > 100 ORDER BY name
+V2: SELECT name, born, count(name) FROM people JOIN crew ON people.person_id = crew.person_id WHERE category='self' and born <> 'NaN' and died IS NULL GROUP BY name HAVING count(name) > 100 ORDER BY name
 	
 Quais são os 5 produtores mais jovens
 V1: SQL: SELECT name, born FROM crew NATURAL JOIN people
@@ -34,12 +34,12 @@ Junção de três ou mais relações
 Quais séries que terminaram um ano após a estreia foram filmadas em mais de cinco línguas
 V1: SQL: SELECT DISTINCT primary_title, count(*) FROM (episodes JOIN titles ON show_title_id = title_id) NATURAL JOIN akas WHERE (type='tvSeries' AND ended = premiered + 1 AND season_number = 1 AND eposide_number = 1 AND language <> 'None') GROUP BY title_id HAVING count(*) > 5
 	2min 54s
-V2: SELECT DISTINCT primary_title, count(*) FROM (episodes JOIN titles ON show_title_id = title_id) WHERE title_id IN(SELECT title_id FROM title NATURAL JOIN akas WHERE (type='tvSeries' AND ended = premiered + 1 AND season_number = 1 AND eposide_number = 1 AND language <> 'None')) GROUP BY title_id HAVING count(*) > 5
+V2: SELECT DISTINCT primary_title, count(*) FROM (episodes JOIN titles ON show_title_id = title_id) JOIN akas on titles.title_id = akas.title_id WHERE (type='tvSeries' AND ended = premiered + 1 AND season_number = 1 AND eposide_number = 1 AND language <> 'None') GROUP BY title_id HAVING count(*) > 5
 	
 Quais mulheres atuaram em títulos com mais de 120 minutos quando tinham mais de 60 anos, em ordem alfabética
 V1: SQL:  SELECT name, born, primary_title, premiered, runtime_minutes FROM people NATURAL JOIN crew NATURAL JOIN titles WHERE category = 'actress' AND premiered > born + 60 AND runtime_minutes > 120 ORDER BY name
 	2min50s
-V2: SELECT name, born, primary_title, premiered, runtime_minutes FROM people NATURAL JOIN crew NATURAL JOIN titles WHERE name IN (SELECT name FROM people WHERE premiered > born + 60) AND category IN (SELECT category FROM crew WHERE category='actress') AND runtime_minutes > 120 ORDER BY name
+V2: SELECT name, born, primary_title, premiered, runtime_minutes FROM people JOIN crew ON people.person_id = crew.person_id NATURAL JOIN titles WHERE category = 'actress' AND premiered > born + 60 AND runtime_minutes > 120 ORDER BY name
 	
 
 Quais filmes, com seus gêneros e ratings, têm a linguagem em português e a região no brasil
@@ -51,7 +51,8 @@ V2: select primary_title, genres, rating from titles natural join ratings where 
 Funções de agregação sobre resultado da junção de duas ou mais relações
 Quais são os 50 diretores que dirigiram pelo menos 5 filmes com as melhores médias de avaliação
 V1: SQL: SELECT name, avg(rating) as average_rating FROM people NATURAL JOIN crew NATURAL JOIN titles NATURAL JOIN ratings WHERE category = 'director' GROUP BY person_id having count(*) > 5 AND type = 'movie' ORDER BY average_rating DESC limit 50
-V2: SELECT name, avg(rating) as average_rating FROM people, ratings NATURAL JOIN crew WHERE crew.person_id = people.person_id AND category IN (SELECT category FROM crew NATURAL JOIN titles WHERE category = 'director' AND type='movie') GROUP BY people.person_id HAVING count(*) > 5 ORDER BY average_rating DESC limit 50
+
+V2: SELECT name, avg(rating) as average_rating FROM ((people JOIN crew ON people.person_id = crew.person_id) JOIN titles ON crew.title_id = titles.title_id) JOIN ratings titles.title_id = ratings.title_id ON WHERE category = 'director' GROUP BY person_id having count(*) > 5 AND type = 'movie' ORDER BY average_rating DESC limit 50
 
 Quais combinações de gêneros, que possuem pelo menos 10 filmes com essa combinação, produzem as 25 maiores médias de avaliação
 V1: SQL: SELECT genres, avg(rating) as rating_mean FROM titles NATURAL JOIN ratings WHERE type = 'movie' GROUP BY titles.genres HAVING count(*) > 10 ORDER BY rating_mean DESC limit 25
