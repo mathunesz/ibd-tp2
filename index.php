@@ -143,63 +143,63 @@
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-5" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 05</h5>
-                                        <small> x s </small>
+                                        <small> 52,9 s </small>
                                     </div>
-                                    <p class="mb-1">x</p>
+                                    <p class="mb-1">As 5 pessoas mais novas que já foram produtoras.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-6" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 06</h5>
-                                        <small> x s </small>
+                                        <small> 35,5 s </small>
                                     </div>
-                                    <p class="mb-1">Os 5 produtores mais jovens.</p>
+                                    <p class="mb-1">Séries que terminaram um ano após a estreia, que possuem apenas uma temporada, e possuem títulos diferentes em outros cinco idiomas.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-7" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 07</h5>
-                                        <small> x s </small>
+                                        <small> 90 s </small>
                                     </div>
-                                    <p class="mb-1">Séries que terminaram um ano após a estreia, que possuem apenas uma temporada, e foram filmadas em mais de cinco línguas.</p>
+                                    <p class="mb-1">Mulheres que atuaram em títulos com mais de 120 minutos quando tinham mais de 60 anos, em ordem alfabética.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-8" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 08</h5>
-                                        <small> x s </small>
+                                        <small> 12,5 s </small>
                                     </div>
-                                    <p class="mb-1">Mulheres que atuaram em títulos com mais de 120 minutos quando tinham mais de 60 anos, em ordem alfabética.</p>
+                                    <p class="mb-1">Quais filmes, com seus gêneros e ratings, têm a linguagem em português e a região no Brasil.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-9" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 09</h5>
-                                        <small> x s </small>
+                                        <small> 1,8 s </small>
                                     </div>
-                                    <p class="mb-1">Os 50 diretores que dirigiram pelo menos 5 filmes com as melhores médias de avaliação.</p>
+                                    <p class="mb-1">As combinações de gêneros que possuem pelo menos 10 filmes com essa combinação e que possuam as 25 maiores médias de avaliação.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-10" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 10</h5>
-                                        <small> x s </small>
+                                        <small> 35.2 s </small>
                                     </div>
-                                    <p class="mb-1">As combinações de gêneros que possuem pelo menos 10 filmes com essa combinação e que possuam as 25 maiores médias de avaliação.</p>
+                                    <p class="mb-1">Os 50 diretores que dirigiram pelo menos 5 filmes com as melhores médias de avaliação.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-11" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 11</h5>
-                                        <small> x s </small>
+                                        <small> 150 s </small>
                                     </div>
                                     <p class="mb-1">Combinações de gêneros com maior média de temporadas por série e a avaliação média dessas combinações.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-12" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 12</h5>
-                                        <small> x s </small>
+                                        <small> 1153 s </small>
                                     </div>
                                     <p class="mb-1">Relação entre idade das equipes e nota dos filmes.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-13" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 13</h5>
-                                        <small> x s </small>
+                                        <small> 112 s </small>
                                     </div>
                                     <p class="mb-1">Relação entre quantidade de filmes produzidos de cada gênero ao longo do tempo e suas avaliações.</p>
                                 </a>
@@ -233,37 +233,37 @@
                                 </div>
                                 <div class="tab-pane fade" id="query-result-5" role="tabpanel">
                                     <div class="mb-3">
-                                        <code>x</code>
+                                        <code>SELECT name as 'Nome', born as 'Data de Nascimento' FROM crew NATURAL JOIN people WHERE born <> 'NaN' AND category = 'producer' GROUP BY person_id ORDER BY born DESC LIMIT 5 </code>
                                     </div>
                                     x
                                 </div>
                                 <div class="tab-pane fade" id="query-result-6" role="tabpanel">
                                     <div class="mb-3">
-                                        <code>SELECT name AS 'Nome', MIN(premiered-born) AS 'Idade' FROM people NATURAL JOIN crew NATURAL JOIN titles WHERE born IS NOT NULL AND premiered IS NOT NULL AND category = 'producer' GROUP BY person_id ORDER BY 'Idade' ASCLIMIT 5</code>
+                                        <code>SELECT primary_title AS 'Título Principal' FROM titles NATURAL JOIN akas WHERE title_id IN (SELECT title_id FROM titles JOIN episodes ON title_id = show_title_id WHERE type = 'tvSeries' AND ended = premiered + 1 GROUP BY title_id HAVING MAX(season_number) = 1) GROUP BY title_id HAVING COUNT(language)  > 5</code>
                                     </div>
                                     x
                                 </div>
                                 <div class="tab-pane fade" id="query-result-7" role="tabpanel">
                                     <div class="mb-3">
-                                        <code>SELECT primary_title AS 'Título Principal' FROM titles NATURAL JOIN akas WHERE title_id IN (SELECT title_id FROM titles JOIN episodes ON title_id = show_title_id WHERE type = 'tvSeries' AND ended = premiered + 1 GROUP BY title_id HAVING MAX(season_number) = 1) GROUP BY title_id HAVING COUNT(language)  > 5</code>
+                                        <code>SELECT name, born, primary_title, premiered, runtime_minutes FROM people NATURAL JOIN crew NATURAL JOIN titles WHERE category = 'actress' AND premiered > born + 60 AND runtime_minutes > 120 ORDER BY name</code>
                                     </div>
                                     x
                                 </div>
                                 <div class="tab-pane fade" id="query-result-8" role="tabpanel">
                                     <div class="mb-3">
-                                        <code>SELECT name, born, primary_title, premiered, runtime_minutes FROM people NATURAL JOIN crew NATURAL JOIN titles WHERE category = 'actress' AND premiered > born + 60 AND runtime_minutes > 120 ORDER BY name</code>
+                                        <code>SELECT primary_title as ‘Título Principal’, genres as ‘Gênero’, rating as ‘Avaliação’ FROM akas NATURAL JOIN titles NATURAL JOIN ratings WHERE language = ‘pt’ AND region = ‘BR’ </code>
                                     </div>
                                     x
                                 </div>
                                 <div class="tab-pane fade" id="query-result-9" role="tabpanel">
                                     <div class="mb-3">
-                                        <code>SELECT name, AVG(rating) AS average_rating FROM people NATURAL JOIN crew NATURAL JOIN titles NATURAL JOIN ratings WHERE category = 'director' GROUP BY person_id HAVING COUNT(*) > 5 AND type = 'movie' ORDER BY average_rating DESC LIMIT 50</code>
+                                        <code>SELECT genres, AVG(rating) AS rating_mean, COUNT(*) AS ammount_movies FROM titles JOIN ratings WHERE titles.title_id = ratings.title_id AND type NOT IN (SELECT type FROM titles WHERE type <> 'movie') GROUP BY titles.genres  HAVING ammount_movies > 10  ORDER BY rating_mean DESC limit 500 </code>
                                     </div>
                                     x
                                 </div>
                                 <div class="tab-pane fade" id="query-result-10" role="tabpanel">
                                     <div class="mb-3">
-                                        <code>SELECT genres, AVG(rating) AS rating_mean FROM titles NATURAL JOIN ratings WHERE type = 'movie' GROUP BY titles.genres HAVING COUNT(*) > 10 ORDER BY rating_mean DESC LIMIT 25</code>
+                                        <code>SELECT name, AVG(rating) AS average_rating FROM people NATURAL JOIN crew NATURAL JOIN titles NATURAL JOIN ratings WHERE category = 'director' GROUP BY person_id HAVING COUNT(*) > 5 AND type = 'movie' ORDER BY average_rating DESC LIMIT 50</code>
                                     </div>
                                     x
                                 </div>
@@ -281,7 +281,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="query-result-13" role="tabpanel">
                                     <div class="mb-3">
-                                        <code>SELECT genres, premiered, COUNT(*) AS ammount_movies, AVG(rating) AS average_rating FROM titles NATURAL JOIN ratings WHERE type = 'movie' AND premiered <> 'NaN’ GROUP BY genres, premiered ORDER BY premiered DESC</code>
+                                        <code>SELECT genres, premiered, COUNT(*) AS ammount_movies, AVG(rating) AS average_ratingFROM titles NATURAL JOIN ratingsWHERE type = 'movie' AND premiered <> 'NaN' AND genres LIKE '%Action%'GROUP BY genres, premiered ORDER BY premiered DESC</code>
                                     </div>
                                     x
                                 </div>
@@ -307,12 +307,28 @@
                     <hr />
                     <div class="col-md-12">
                         <div class="row">
-                        <div class="col-md-6">
-                            <canvas id="graph-1" width="400" height="200"></canvas>
+                            <div class="col-md-6">
+                                <canvas id="graph-1" width="400" height="200"></canvas>
+                            </div>
+                            <div class="col-md-6">
+                                <canvas id="graph-4" width="400" height="200"></canvas>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <canvas id="graph-4" width="400" height="200"></canvas>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <canvas id="graph-5" width="400" height="200"></canvas>
+                            </div>
+                            <div class="col-md-6">
+                                <canvas id="graph-6" width="400" height="200"></canvas>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <canvas id="graph-7" width="400" height="200"></canvas>
+                            </div>
+                            <div class="col-md-6">
+                                <canvas id="graph-8" width="400" height="200"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -320,10 +336,11 @@
 
         <div class="row">
                 <div class="col-md-12 mb-5">
-                    <h2>Referências</h2>
+                <h2>Referências</h2>
                     <hr />
-                    <p>[1] ASIDJIASJDOIAJSDOIAJSDOIJASDIA </p>
-                    <P>[2] odajsidjasoidjaoisdjaoijsdoiajdoiajd </P>
+                    <p>[1] Banco de Dados IMDb - <a href="https://datasets.imdbws.com/" target="_blank"></p>
+                    <p>[2] Especificações das Tabelas Originais <a href="https://www.imdb.com/interfaces/" target="_blank"></p>
+		            <p>[3] API IMDb SQLite <a href="https://pypi.org/project/imdb-sqlite/" target="_blank"></p>
                 </div>
             </div>
 
@@ -481,80 +498,7 @@
     });
     </script>
 
-    <script>
-        var g1 = document.getElementById('graph-1').getContext('2d');
-        var myLineChart = new Chart.Line(g1, {
-            options: {
-                responsive: true,
-                hoverMode: 'index',
-                stacked: false,
-                title: {
-                    display: true,
-                    text: 'Relação entre os titulos mais votados e menos votados e suas respectivas notas.'
-                },
-                scales: {
-                    yAxes: [{
-                        type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-                        display: true,
-                        position: 'left',
-                        id: 'y-axis-1',
-                    }, {
-                        type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-                        display: true,
-                        position: 'right',
-                        id: 'y-axis-2',
-
-                        // grid line settings
-                        gridLines: {
-                            drawOnChartArea: false, // only want the grid lines for one axis to show up
-                        },
-                    }],
-                }
-            },
-            data: {
-                labels: [0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100], 
-                datasets: [{
-                    label: '100 mais votados',
-                    borderColor: '#FF0000',
-                    backgroundColor: '#ff8f8f',
-                    fill: false,
-                    data: [9.3,9.0,8.8,8.8,8.9,8.8,9.4,8.7,8.8,8.9,9.2,8.4,8.7,8.6,8.6,9.5,8.4,8.5,8.2,8.0,8.6,8.3,8.6,8.6,8.9,8.5,8.5,8.7,8.2,7.8,8.4,8.6,8.1,9.0,8.3,7.8,8.0,8.0,8.5,8.2,8.5,8.5,8.7,8.1,8.5,8.4,8.5,8.3,8.1,7.9,8.3,8.5,8.2,8.1,8.1,8.3,8.7,8.0,8.3,8.4,8.3,8.4,7.2,8.3,8.1,8.1,7.9,8.2,8.3,8.1,8.1,8.0,8.0,8.0,8.1,8.2,8.3,9.1,8.4,7.8,7.7,8.0,8.5,8.3,8.9,7.2,8.0,8.1,8.3,8.3,7.7,7.0,8.0,8.5,6.9,7.3,7.7,7.7,8.1,8.3],
-                    type: 'line'
-                    },{
-                    borderColor: '#0008ff',
-                    backgroundColor: '#9c9fff',
-                    fill:false,
-                    label: '100 menos votados',
-                    data: [6.2,5.4,5.6,7.0,5.8,6.2,7.0,6.0,8.8,4.4,5.4,6.2,5.8,6.6,4.4,4.6,4.6,3.2,3.8,5.0,5.0,7.2,5.2,5.4,5.0,3.8,5.6,5.8,3.8,4.8,5.6,6.4,5.8,4.6,5.6,4.4,7.2,4.8,4.8,3.6,5.8,7.2,4.4,4.2,4.2,5.4,5.4,5.4,5.0,5.6,4.2,4.4,7.4,5.2,6.0,5.4,7.8,9.0,4.2,4.4,5.8,6.0,5.4,4.8,4.6,3.8,4.8,5.8,6.0,6.0,4.6,8.2,6.6,8.2,4.6,5.0,6.4,6.0,4.4,3.8,4.6,6.0,5.4,5.0,4.4,6.4,7.8,6.8,5.8,7.2,5.4,9.0,5.8,6.2,4.4,7.6,6.6,7.6,7.0,6.6],
-                    type: 'line'
-                    }]
-            }
-        });
-
-    </script>
-
-<script>
-        var g4 = document.getElementById('graph-4').getContext('2d');
-        var myLineChart = new Chart(g4, {
-            type: 'pie',
-            data: {
-                datasets: [{
-                    data: [212, 7934],
-                    backgroundColor: [
-                        "#FF0000","#0008ff"
-                    ],
-                    label: 'Dataset 1'}],
-                labels: [
-                    'Atrizes acima de 60 anos',
-                    'Atrizes abaixo de 60 anos',
-                ]
-            },
-            options: {
-				responsive: true
-			}
-        });
-
-    </script>
+    <script src="./js/charts.js"></script>
 </body>
 
 </html>
