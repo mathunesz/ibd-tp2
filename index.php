@@ -157,28 +157,28 @@
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-7" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 07</h5>
-                                        <small> x s </small>
+                                        <small> 2 min 54 s </small>
                                     </div>
                                     <p class="mb-1">Séries que terminaram um ano após a estreia, que possuem apenas uma temporada, e foram filmadas em mais de cinco línguas.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-8" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 08</h5>
-                                        <small> x s </small>
+                                        <small> 2 min 50 s </small>
                                     </div>
                                     <p class="mb-1">Mulheres que atuaram em títulos com mais de 120 minutos quando tinham mais de 60 anos, em ordem alfabética.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-9" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 09</h5>
-                                        <small> x s </small>
+                                        <small> 34 s </small>
                                     </div>
                                     <p class="mb-1">Os 50 diretores que dirigiram pelo menos 5 filmes com as melhores médias de avaliação.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="list" href="#query-result-10" role="tab">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Consulta 10</h5>
-                                        <small> x s </small>
+                                        <small> 2.17 s </small>
                                     </div>
                                     <p class="mb-1">As combinações de gêneros que possuem pelo menos 10 filmes com essa combinação e que possuam as 25 maiores médias de avaliação.</p>
                                 </a>
