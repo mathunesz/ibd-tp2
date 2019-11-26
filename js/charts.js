@@ -236,7 +236,7 @@ var myLineChart = new Chart.Line(g8, {
         stacked: false,
         title: {
             display: true,
-            text: 'Relação da quantidade de filmes produzidos e a média de suas notas através dos anos.'
+            text: 'Relação da quantidade de filmes de AÇÂO produzidos e a média de suas notas através dos anos.'
         },
         scales: {
             yAxes: [{

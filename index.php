@@ -87,9 +87,10 @@
                     Como dito anteriormente, foi utilizada neste projeto a base de dados do IMDB. A mesma foi extraída através do <a href="https://github.com/jojje/imdb-sqlite" target="_blank">IMDb SQLite</a>. Uma aplicação em Python para importação da base de dados do IMDb.
                 </p>
                 <p class="mb-4">
-                    Abaixo, fica explícito o diagrama ER específico que foi utilizado neste projeto:
+                    Abaixo, fica explícito o diagrama ER e o Entidade-Relacionamento específico que foi utilizado neste projeto:
                 </p>
                 <div class="text-center"><img src="./assets/relacional-imdb.png" class="img-fluid"></div>
+                <div class="text-center"><img src="./assets/er.jpeg" class="img-fluid"></div>
             </div>
         </div>
 
